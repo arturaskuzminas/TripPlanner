@@ -1,3 +1,3 @@
 <p align="center">
-# IT komandinio darbo modulio pagrindinė repozitorija.
+  <h1>IT komandinio darbo modulio pagrindinė repozitorija.</h1>
 </p>
