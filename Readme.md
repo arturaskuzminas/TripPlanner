@@ -1,1 +1,1 @@
-IT komandinio darbo modulio pagrindinė repozitorija.
+#IT komandinio darbo modulio pagrindinė repozitorija.
