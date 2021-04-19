@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body{
+    background-image: url("https://images.wallpaperscraft.com/image/ocean_beach_aerial_view_134429_1600x900.jpg")
+    }
+    </style>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<!--<body id="registruotis" class="scrollspy">-->
+
+
+<div class="navbar-fixed">
+    <nav class="black">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Komanda 8</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#planavimas">Pradėk Planuoti</a>
+                    </li>
+                    <li>
+                        <a href="#atsijungti">Atsijungti</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <br>
+    <div class="row gutters">
+        <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="account-settings">
+                        <div class="user-profile ">
+                            <div class="user-avatar">
+                                <img src="user.png" class="rounded mx-auto d-block" height="100" width="100"
+                                    alt="Admin">
+                            </div><br>
+                            <h5 class="user-name text-center">Vardenis Pavardenis</h5>
+                            <h6 class="user-email text-center">vardenispavardenis@email.com</h6><br><br>
+                            <hr>
+                            <div class="about text-center">
+                                <h5>Naudotojo veiksmai</h5><br>
+                                <div class="">
+                                    <button class="btn btn-outline-dark">Užsakymų istorija</button>
+                                </div>
+
+                                <br><br><br><br>
+                                <ul><a href="#" class="text-dark">Ištrinti anketą</a></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------------->
+        <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h6 class="mb-2 text-primary">Personal Details</h6>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="fullName">Vardas</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Įveskite savo vardą">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="fullName">Pavardė</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Įveskite savo vardą">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="eMail">El. paštas</label>
+                                <input type="email" class="form-control" id="eMail" placeholder="Įveskite el. paštą">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="phone">Telefonas</label>
+                                <input type="text" class="form-control" id="phone"
+                                    placeholder="Įveskite telefono numerį">
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------------------------------------------------------------------------->
+                    <div class="row gutters">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="password">Slaptažodis</label>
+                                <input type="password" class="form-control" id="passw"
+                                    placeholder="Įveskite slaptažodį">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="password">Pakartokite slaptažodį</label>
+                                <input type="password" class="form-control" id="passw"
+                                    placeholder="Įveskite slaptažodį">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gutters">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="text-right">
+                                <button type="button" id="submit" name="submit"
+                                    class="btn btn-success">Atnaujinti</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------->
+<br><br><br><br><br><br><br><br>
+<!---page footer--------------------------------------->
+<footer <div class="black">
+    <div class="container">
+        <div class="row">
+            <div class="black">
+                <h5 class="white-text">Sekite mus</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Twitter </a>
+                    </li>
+
+                    <li>
+                        <a href="#" filter:invert(0)><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="white-text">
+                © 2021 Komanda 8 LTD
+            </div>
+        </div>
+    </div>
+
+</footer>
+</body>
+
+</html>
