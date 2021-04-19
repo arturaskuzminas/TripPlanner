@@ -1,0 +1,187 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <!--<body id="registruotis" class="scrollspy">-->
+
+      
+<div class="navbar-fixed">
+    <nav class="black">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Komanda 8</a>    
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-small-only">
+      <form>               
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+            </ul>
+           <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#registruotis">Pagrindinis</a>
+            </li>
+            <li>
+              <a href="#prisijungti">Prisijungti</a>
+            </li>
+
+              
+              
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <a href="#home"></a>
+    </li>
+    <li>
+      <a href="#register">Registruotis</a>
+    </li>
+    <li>
+      <a href="#login">Prisijungti</a>
+    </li>
+    <li>
+      <a href="#uzsakymai">Užsakymai</a>
+    </li>
+    <li>
+      <a href="#form">Anketa</a>
+    </li>
+    
+    <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    
+    
+  </ul>
+
+<!------------------------------------------------------------>   
+    
+
+ <div class="container">
+   <div id="signup">
+      <div class="signup-screen">
+         <div class="black white-text space-bot text-center">
+            <h1>Registracija</h1>
+           <div class="divider"></div>
+         </div>
+	            <div class="input-field col s6">
+              <input id="first-name" type="text" class="validate" required>
+              <label for="first-name">Vardas</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last-name" type="text" class="validate" required>
+              <label for="last-name">Pavardė</label>
+             </div>
+             <div class="input-field col s6">
+              <input id="email" type="email" name="email" ng-model="email" class="validate" required>
+              <label for="email">Email</label>
+             </div>
+             <p class="alert alert-danger" ng-show="form-register.email.$error.email">Netinkamas pašto adresas.</p>
+             <div class="input-field col s6">
+               <input id="password" type="password" name="password" ng-model="password" ng-minlength='6' class="validate" required>
+               <label for="password">Slaptažodis</label>
+              </div>
+              <p class="alert alert-danger" ng-show="form-register.password.$error.minlength || form.password.$invalid">Slaptažodis turi būti bent aštuonių simbolių.</p>
+              <div class="space-top text-center">
+               <button ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done">
+               <i class="material-icons left">done</i> Registruotis
+               </button>
+               <button type="button" class="black  btn cancel">
+               <i class="material-icons left">clear</i>Atšaukti
+               </button>
+              </div>
+             </form>
+           </div>
+        </div>
+    </div>
+</body>
+
+
+
+<!---Re captcha V2----------------------------------------------> 
+
+<html>
+  <head>
+    <title>reCAPTCHA demo: Simple page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+
+
+<!---page footer------------------------------------------------>     
+        <footer 
+          <div class="black">
+          <div class="container">
+            <div class="row">
+              <div class="black">
+                <h5 class="white-text">Sekite mus</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Twitter </a>                    
+                  </li>
+                  
+                  <li>
+                      <a href="#" filter:invert(0) ><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a>        
+                 </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+              <div class="white-text">
+            © 2021 Komanda 8 LTD
+            <a class="grey-text text-lighten-4 right" href="#!">Nice</a>
+               </div>
+            </div>
+          </div>    
+ 
+        </footer>      
+      
+      
+      
+      
+      <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+  </html>
+
+<!--FOR V2 Only:
+
+With the following test keys, you will always get No CAPTCHA and all verification requests will pass.
+
+Site key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI
+
+Secret key: 6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe
+
+Source: Google reCAPTCHA FAQs Page
+
+https://developers.google.com/recaptcha/docs/display#auto_render
+
+
+-->
+
