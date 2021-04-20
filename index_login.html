@@ -34,7 +34,7 @@
               <a href="index.html">Pagrindinis</a>
             </li>
             <li>
-              <a href="index_login.html">Prisijungti</a>
+              <a href="index_registration.html">Registruotis</a>
             </li>
 
               
@@ -79,17 +79,9 @@
    <div id="signup">
       <div class="signup-screen">
          <div class="black white-text space-bot text-center">
-            <h1> Registracija</h1>
+            <h1> Prisijungimas</h1>
            <div class="divider"></div>
          </div>
-	            <div class="input-field col s6">
-              <input id="first-name" type="text" class="validate" required>
-              <label for="first-name">Vardas</label>
-            </div>
-            <div class="input-field col s6">
-              <input id="last-name" type="text" class="validate" required>
-              <label for="last-name">Pavardė</label>
-             </div>
              <div class="input-field col s6">
               <input id="email" type="email" name="email" ng-model="email" class="validate" required>
               <label for="email">Email</label>
@@ -102,7 +94,7 @@
               <p class="alert alert-danger" ng-show="form-register.password.$error.minlength || form.password.$invalid">Slaptažodis turi būti bent aštuonių simbolių.</p>
               <div class="space-top text-center">
                <button ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done">
-               <i class="material-icons left">done</i> Registruotis
+               <i class="material-icons left">done</i> Prisijungti
                </button>
                <button type="button" class="black  btn cancel">
                <i class="material-icons left">clear</i>Atšaukti
