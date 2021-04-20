@@ -101,42 +101,37 @@
               </div>
               <p class="alert alert-danger" ng-show="form-register.password.$error.minlength || form.password.$invalid">Slaptažodis turi būti bent aštuonių simbolių.</p>
               <div class="space-top text-center">
+                <!---Re captcha V2----------------------------------------------> 
+
+                  <html>
+                    <head>
+                      <div>
+                      <title>reCAPTCHA demo: Simple page</title>
+                      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                    </head>
+                    <body>
+                      <form action="?" method="POST">
+                        <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                        <br/>
+                      </form>
+                    </div>
+                    </body>
+                  </html>
+
+
                <button ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done">
                <i class="material-icons left">done</i> Registruotis
                </button>
                <button type="button" class="black  btn cancel">
                <i class="material-icons left">clear</i>Atšaukti
                </button>
+               <h1> </h1>
               </div>
              </form>
            </div>
         </div>
     </div>
 </body>
-
-
-
-<!---Re captcha V2----------------------------------------------> 
-
-<html>
-  <head>
-    <div>
-    <title>reCAPTCHA demo: Simple page</title>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  </head>
-  <body>
-    <form action="?" method="POST">
-      <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
-      <br/>
-      <button type="button" class="black  btn cancel">
-        <i class="material-icons left">clear</i>Patvirtinti
-        </button>
-        <h1>    </h1>
-    </form>
-  </div>
-  </body>
-</html>
-
 
 
 <!---page footer--------------------------------------->
