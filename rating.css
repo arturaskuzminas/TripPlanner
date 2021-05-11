@@ -8,6 +8,10 @@
     width: 50px;
   }
  */
+ .logo {
+  float: left;
+  margin-left:1%;
+  }
 .rating {
 	font-size: 30px;
 	height: 30px;
