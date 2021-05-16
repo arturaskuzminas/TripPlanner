@@ -21,7 +21,7 @@
 .rating1:hover:before {
    content: "🤒";
     font-size: 30px;
-
+    position: absolute;
   /*margin-left: -25px;
   -webkit-transform: scale(1.2);
     -webkit-transform: rotate(30deg);*/
