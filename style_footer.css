@@ -119,4 +119,13 @@ footer p {
     height: 20px;
     text-align: center;
 }
-
+.leidykla-map {
+	width: 95%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+.ilgis{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
