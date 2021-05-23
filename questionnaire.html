@@ -56,9 +56,9 @@
     </div>
 
     <div class="container text-center hide results">
-        <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results1.jpg" class="results col-md-4 col-sm-4 col-xs-4">
-        <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results2.jpg" class="results col-md-4 col-sm-4 col-xs-4">
-        <img src="https://raw.githubusercontent.com/danubevictoria/quiz/master/images/results3.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+        <img src="Pictures/italija.png" class="results col-md-4 col-sm-4 col-xs-4">
+        <img src="Pictures/m4.jpg" class="results col-md-4 col-sm-4 col-xs-4">
+        <img src="Pictures/m5.jpg" class="results col-md-4 col-sm-4 col-xs-4">
     </div>
 
     <!-- <div class="container progress">
@@ -78,6 +78,7 @@
         <button id="submit-btn" class="btn btn-primary btn-lg">Pateikti</button>
 
         <button id="retake-btn" class="hide btn btn-primary btn-lg">Laikyti per naują</button>
+        <button id="offer-btn" class="hide btn btn-primary btn-lg">Eiti į pasiūlymą</button>
     </div>
     <!-- SCRIPTS -->
 
@@ -190,7 +191,7 @@
             weight: 1,
             class: 'group10'
         }, {
-            prompt: 'I would rather improvise than spend time coming up with a detailed plan',
+            prompt: 'Kelionės metu man svarbu apžiūrėti aplinką savo tempu',
             weight: 1,
             class: 'group11'
         }
@@ -344,25 +345,33 @@ Pirmaisiais amžiais po Kristaus Roma tapo stipriausia valstybe ir užėmė dide
 Italija – natūralaus ir visaverčio maisto rojus. XX a. pabaigoje pasaulyje įsigalint greitojo maisto užkandinėms, Italijoje kilo naminio ir šviežio maisto judėjimas. Italai, kaip reta pasaulyje, moka džiaugtis valgiu ir paruošti jį taip, kad pirštus apsilaižys ir jaunas, ir senas.\
 		';
         } else if (total > 0) {
-            document.getElementById('results').innerHTML = '<b>You are extroverted!</b><br><br>\
-		On the opposite side of the coin, people who are extroverted are energized by people. They usually enjoy spending time with others, as this is how they recharge from time spent alone focusing or working hard.\
+            document.getElementById('results').innerHTML = '<b>Jums tiktų kelionė į Italiją!</b><br><br>\
+            Italija yra ir viena seniausių pasaulio valstybių, ir kartu viena jauniausių, nes tik 1871 m. jos hercogystės ir kunigaikštystės susijungė į bendrą darinį.\n\
 <br><br>\
-I like how this extrovert explains the way he/she gains energy from being around other people:\
+Iš visų genčių, gyvenusių Apeninų pusiasalyje 1 tūkst. prieš Kristų, iškilo lotynai ir sabinai. Pastarieji 753 m. prieš Kristų įkūrė Romos miestą.\n\
 <br><br>\
-When I am among people, I make eye contact, smile, maybe chat if there’s an opportunity (like being stuck in a long grocery store line). As an extrovert, that’s a small ‘ping’ of energy, a little positive moment in the day.';
+Pirmaisiais amžiais po Kristaus Roma tapo stipriausia valstybe ir užėmė didelę dalį dabartinės Europos, Šiaurės Afrikos, Mažosios Azijos, tačiau 476 m., užkariauta barbarų, Romos imperija žlugo.\n\n\
+<br><br>\
+Italija – natūralaus ir visaverčio maisto rojus. XX a. pabaigoje pasaulyje įsigalint greitojo maisto užkandinėms, Italijoje kilo naminio ir šviežio maisto judėjimas. Italai, kaip reta pasaulyje, moka džiaugtis valgiu ir paruošti jį taip, kad pirštus apsilaižys ir jaunas, ir senas.\
+		';
         } else {
-            document.getElementById('results').innerHTML = '<b>You are ambiverted!</b><br><br>\
-		Since introverts and extroverts are the extremes of the scale, the rest of us fall somewhere in the middle. Many of us lean one way or the other, but there are some who are quite balanced between the two tendencies. These people are called ambiverts.\
+            document.getElementById('results').innerHTML = '<b>Jums tiktų kelionė į Italiją!</b><br><br>\
+            Italija yra ir viena seniausių pasaulio valstybių, ir kartu viena jauniausių, nes tik 1871 m. jos hercogystės ir kunigaikštystės susijungė į bendrą darinį.\n\
 <br><br>\
-So let’s look at how an ambivert compares.\
+Iš visų genčių, gyvenusių Apeninų pusiasalyje 1 tūkst. prieš Kristų, iškilo lotynai ir sabinai. Pastarieji 753 m. prieš Kristų įkūrė Romos miestą.\n\
 <br><br>\
-Ambiverts exhibit both extroverted and introverted tendencies. This means that they generally enjoy being around people, but after a long time this will start to drain them. Similarly, they enjoy solitude and quiet, but not for too long. Ambiverts recharge their energy levels with a mixture of social interaction and alone time.'
+Pirmaisiais amžiais po Kristaus Roma tapo stipriausia valstybe ir užėmė didelę dalį dabartinės Europos, Šiaurės Afrikos, Mažosios Azijos, tačiau 476 m., užkariauta barbarų, Romos imperija žlugo.\n\n\
+<br><br>\
+Italija – natūralaus ir visaverčio maisto rojus. XX a. pabaigoje pasaulyje įsigalint greitojo maisto užkandinėms, Italijoje kilo naminio ir šviežio maisto judėjimas. Italai, kaip reta pasaulyje, moka džiaugtis valgiu ir paruošti jį taip, kad pirštus apsilaižys ir jaunas, ir senas.\
+		'
         }
 
         // Hide the quiz after they submit their results
         $('#quiz').addClass('hide');
         $('#submit-btn').addClass('hide');
         $('#retake-btn').removeClass('hide');
+        $('#offer-btn').addClass('hide');
+        $('#offer-btn').removeClass('hide');
     })
 
     // Refresh the screen to show a new quiz if they click the retake quiz button
@@ -370,8 +379,14 @@ Ambiverts exhibit both extroverted and introverted tendencies. This means that t
         $('#quiz').removeClass('hide');
         $('#submit-btn').removeClass('hide');
         $('#retake-btn').addClass('hide');
+        $('#offer-btn').addClass('hide');
 
         $('.results').addClass('hide');
         $('.results').removeClass('show');
+    })
+
+
+    $('#offer-btn').click(function() {
+        window.location.replace("italy.html");
     })
 </script>
