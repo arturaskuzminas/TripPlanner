@@ -16,13 +16,38 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- CUSTOM -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="CSS/style_footer.css">
+    <link rel="stylesheet" href="CSS/rating.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
 </head>
 <!-- BODY -->
 
 <body>
+    <div class="navbar-fixed">
+        <nav class="black">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index_userpage.html" class="brand-logo">Komanda 8</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
 
     <div class="container text-center">
-        <h1>Personality Test</h1>
+        <h1>Kelionių anketa</h1>
     </div>
     <div class="container text-center">
         <ul id="quiz" class="list-group">
@@ -50,9 +75,9 @@
     </div>
 
     <div class="container text-center bottom">
-        <button id="submit-btn" class="btn btn-primary btn-lg">Submit</button>
+        <button id="submit-btn" class="btn btn-primary btn-lg">Pateikti</button>
 
-        <button id="retake-btn" class="hide btn btn-primary btn-lg">Retake Quiz</button>
+        <button id="retake-btn" class="hide btn btn-primary btn-lg">Laikyti per naują</button>
     </div>
     <!-- SCRIPTS -->
 
@@ -65,6 +90,51 @@
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
+<!---page footer--------------------------------------->
+<div>
+    <footer class="footer">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Komanda 8</h5>
+                    <!--headin5_amrc-->
+                    <p class="mb10">Komanda 8 - puslapis, kuriame galite greitai ir kokybiškai suplanuoti savo kelionę bei ją užsisakyti. Puslapyje galite planuoti kelionę po visą Europą.</p>
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-6 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2">Greitos nuorodos</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li><a href="">Kelionių pasiūlymai</a></li>
+                        <li><a href="">Pagalba</a></li>
+                        <li><a href="">Privatumo politika</a></li>
+
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <ul class="foote_bottom_ul_amrc">
+                <li><a href="index.html">Pagrindinis</a></li>
+                <li><a href="">Apie</a></li>
+                <li><a href="">Kelionės</a></li>
+                <li><a href="">Kontaktai</a></li>
+            </ul>
+            <!--foote_bottom_ul_amrc ends here-->
+            <p class="text-center">Copyright @2021 | Dizainas priklauso <a href="#">Komanda 8</a></p>
+            <!--social_footer_ul ends here-->
+        </div>
+
+    </footer>
+</div>
+
+
 </html>
 
 
@@ -76,47 +146,47 @@
     // If a personlity trait is considered more extroverted, it will have a positive weight.
 
     var prompts = [{
-            prompt: 'I find it difficult to introduce myself to people',
+            prompt: 'Man patinka ilgos kelionės',
             weight: -1,
             class: 'group0'
         }, {
-            prompt: 'I get so lost in my thoughts I ignore or forget my surroundings',
+            prompt: 'Man labiau patinka grožėtis aplinka nei menu',
             weight: -1,
             class: 'group1'
         }, {
-            prompt: 'I do not usually initiate conversations',
+            prompt: 'Man patinka kelionės grupėse',
             weight: -1,
             class: 'group2'
         }, {
-            prompt: 'I prefer not to engage with people who seem angry or upset',
+            prompt: 'Aš moku daugiau nei vieną kalbą',
             weight: -1,
             class: 'group3'
         }, {
-            prompt: 'I choose my friends carefully',
+            prompt: 'Aš esu fiziškai aktyvus',
             weight: -1,
             class: 'group4'
         }, {
-            prompt: 'I find it difficult to tell stories about myself',
+            prompt: 'Esu didelis istorijos mėgėjas',
             weight: -1,
             class: 'group5'
         }, {
-            prompt: 'I am usually highly motivated and energetic',
+            prompt: 'Prieš keliaujant aš suplanuoju kiekvieną savo žingsnį',
             weight: 1,
             class: 'group6'
         }, {
-            prompt: 'I find it easy to walk up to a group of people and join in conversation',
+            prompt: 'Mano kelionės tikslas yra susipažinti su nauja kultūra',
             weight: 1,
             class: 'group7'
         }, {
-            prompt: 'Being adaptable is more important than being organized',
+            prompt: 'Per keliones bandau susipažinti su naujais žmonėmis',
             weight: 1,
             class: 'group8'
         }, {
-            prompt: 'I care more about making sure no one gets upset than winning a debate',
+            prompt: 'Aš nebijau iššūkių ',
             weight: 1,
             class: 'group9'
         }, {
-            prompt: 'I often do not feel I have to justify myself to people',
+            prompt: 'Man yra labai svarbi kelionės metu gyvenamoji vieta',
             weight: 1,
             class: 'group10'
         }, {
@@ -130,23 +200,23 @@
     // This array stores all of the possible values and the weight associated with the value. 
     // The stronger agreeance/disagreeance, the higher the weight on the user's answer to the prompt.
     var prompt_values = [{
-        value: 'Strongly Agree',
+        value: 'Labai sutinku',
         class: 'btn-default btn-strongly-agree',
         weight: 5
     }, {
-        value: 'Agree',
+        value: 'Sutinku',
         class: 'btn-default btn-agree',
         weight: 3,
     }, {
-        value: 'Neutral',
+        value: 'Nei sutinku nei nesutinku',
         class: 'btn-default',
         weight: 0
     }, {
-        value: 'Disagree',
+        value: 'Nesutinku',
         class: 'btn-default btn-disagree',
         weight: -3
     }, {
-        value: 'Strongly Disagree',
+        value: 'Smarkiai nesutinku',
         class: 'btn-default btn-strongly-disagree',
         weight: -5
     }]
@@ -167,21 +237,6 @@
         }
     }
 
-    // For each possible value, create a button for each to be inserted into each li of the quiz
-    // function createValueButtons() {
-
-    // 	for (var li_index = 0; li_index < prompts.length; li_index++) {
-    // 		for (var i = 0; i < prompt_values.length; i++) {
-    // 			var val_button = document.createElement('button');
-    // 			var val_text = document.createTextNode(prompt_values[i].value);
-
-    // 			val_button.setAttribute('class', 'value-btn btn ' + prompt_values[i].class);
-    // 			val_button.appendChild(val_text);
-
-    // 			document.getElementsByClassName('prompt')[li_index].appendChild(val_button);
-    // 		}
-    // 	}
-    // }
     function createValueButtons() {
         for (var li_index = 0; li_index < prompts.length; li_index++) {
             var group = document.createElement('div');
@@ -279,14 +334,14 @@
             // document.getElementById('intro-bar').style.width = ((total / 60) * 100) + '%';
             // console.log(document.getElementById('intro-bar').style.width);
             // document.getElementById('intro-bar').innerHTML= ((total / 60) * 100) + '%';
-            document.getElementById('results').innerHTML = '<b>You are introverted!</b><br><br>\
-		Introverts are tricky to understand, since it’s so easy for us to assume that introversion is the same as being shy, when, in fact, introverts are simply people who find it tiring to be around other people.\n\
+            document.getElementById('results').innerHTML = '<b>Jums tiktų kelionė į Italiją!</b><br><br>\
+            Italija yra ir viena seniausių pasaulio valstybių, ir kartu viena jauniausių, nes tik 1871 m. jos hercogystės ir kunigaikštystės susijungė į bendrą darinį.\n\
 <br><br>\
-I love this explanation of an introvert’s need to be alone:\n\
+Iš visų genčių, gyvenusių Apeninų pusiasalyje 1 tūkst. prieš Kristų, iškilo lotynai ir sabinai. Pastarieji 753 m. prieš Kristų įkūrė Romos miestą.\n\
 <br><br>\
-For introverts, to be alone with our thoughts is as restorative as sleeping, as nourishing as eating.\n\n\
+Pirmaisiais amžiais po Kristaus Roma tapo stipriausia valstybe ir užėmė didelę dalį dabartinės Europos, Šiaurės Afrikos, Mažosios Azijos, tačiau 476 m., užkariauta barbarų, Romos imperija žlugo.\n\n\
 <br><br>\
-Introverted people are known for thinking things through before they speak, enjoying small, close groups of friends and one-on-one time, needing time alone to recharge, and being upset by unexpected changes or last-minute surprises. Introverts are not necessarily shy and may not even avoid social situations, but they will definitely need some time alone or just with close friends or family after spending time in a big crowd.\
+Italija – natūralaus ir visaverčio maisto rojus. XX a. pabaigoje pasaulyje įsigalint greitojo maisto užkandinėms, Italijoje kilo naminio ir šviežio maisto judėjimas. Italai, kaip reta pasaulyje, moka džiaugtis valgiu ir paruošti jį taip, kad pirštus apsilaižys ir jaunas, ir senas.\
 		';
         } else if (total > 0) {
             document.getElementById('results').innerHTML = '<b>You are extroverted!</b><br><br>\
